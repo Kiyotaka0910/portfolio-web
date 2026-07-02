@@ -480,3 +480,34 @@ body {
     .timeline-feed { padding-left: 20px; }
     .timeline-item::before { left: -27px; }
 }
+
+/* --- THEME SPECIFIQUE CYBER (Alerte & Defense) --- */
+
+.cyber-alert-theme {
+    background: linear-gradient(135deg, #0f0505 0%, #1a0b0b 100%) !important;
+    border-bottom: 2px solid #ef4444 !important;
+}
+
+.alert-pulse {
+    background: rgba(239, 68, 68, 0.15) !important;
+    color: #ef4444 !important;
+    border: 1px solid rgba(239, 68, 68, 0.3) !important;
+}
+
+/* Bordures de cartes statistiques */
+.border-red { border-top: 3px solid #ef4444 !important; }
+.border-blue { border-top: 3px solid var(--neon-blue) !important; }
+.border-green { border-top: 3px solid var(--neon-green) !important; }
+
+.text-green { color: var(--neon-green); }
+
+/* Animation spécifique pour la veille cyber */
+@keyframes alert-blink {
+    0% { opacity: 1; text-shadow: 0 0 5px #ef4444; }
+    50% { opacity: 0.6; text-shadow: none; }
+    100% { opacity: 1; text-shadow: 0 0 5px #ef4444; }
+}
+
+.alert-pulse .fa-circle-dot {
+    animation: alert-blink 1s infinite;
+}
