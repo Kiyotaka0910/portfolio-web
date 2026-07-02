@@ -6,46 +6,6 @@
     <title>Tableau de Synthèse — BTS SIO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Styles spécifiques pour rendre le tableau HTML parfaitement propre et lisible */
-        .skills-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 0.95rem;
-        }
-        .skills-table th, .skills-table td {
-            padding: 14px 18px;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-        .skills-table th {
-            background-color: #1e293b;
-            color: var(--neon-blue);
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 0.5px;
-        }
-        .skills-table tr:hover {
-            background-color: rgba(255, 255, 255, 0.02);
-        }
-        .skills-table td strong {
-            color: var(--text-main);
-        }
-        .skills-table td em {
-            color: var(--neon-purple);
-            font-style: normal;
-        }
-        .legend-list {
-            list-style: none;
-            padding: 0;
-        }
-        .legend-list li {
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-        }
-    </style>
 </head>
 <body>
 
@@ -66,95 +26,111 @@
     <header class="cyber-header-hub stage-theme">
         <div class="hub-overlay">
             <span class="badge-status-cyber"><i class="fa-solid fa-file-lines"></i> RÉFÉRENTIEL OFFICIEL</span>
-            <h1>📜 Tableau de Synthèse des Compétences - Référentiel BTS SIO</h1>
+            <h1>📜 Tableau de Synthèse des Compétences</h1>
             <p>Ce tableau croise les compétences officielles du référentiel SIO avec les réalisations et projets que j'ai menés au cours de ma formation.</p>
         </div>
     </header>
 
     <main class="dashboard-container">
 
-        <section class="company-profile-card">
-            <div class="company-header">
-                <h2>🛠️ Portefeuille de compétences (Option SISR)</h2>
-            </div>
-            <div style="overflow-x: auto; padding: 10px;">
-                <table class="skills-table">
-                    <thead>
-                        <tr>
-                            <th>Domaines de compétences</th>
-                            <th>Compétences spécifiques</th>
-                            <th>Réalisations associées (Projets / Stages)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Gérer le patrimoine informatique</strong></td>
-                            <td>Recenser et identifier les actifs informatiques</td>
-                            <td><em>Ex: Inventaire de stage 1</em></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Mettre en place des outils de supervision</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Gérer les sauvegardes et la sécurité des données</td>
-                            <td><em>Ex: Guide de bonne conduite / Sauvegardes stage</em></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Répondre aux incidents</strong></td>
-                            <td>Collecter, suivre et orienter les demandes</td>
-                            <td><em>Ex: Support utilisateur en stage</em></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Traiter les incidents sur les réseaux et serveurs</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Développer la présence web</strong></td>
-                            <td>Participer à la valorisation de l'identité numérique</td>
-                            <td><em>Ex: Création de ce portfolio GitHub</em></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Développer ou adapter une solution web</td>
-                            <td><em>Ex: Articles sur WordPress</em></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Travailler en mode projet</strong></td>
-                            <td>Analyser les besoins et planifier les tâches</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Travailler en équipe (collaboration)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Mettre à disposition des services</strong></td>
-                            <td>Déployer et configurer des postes clients</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Configurer des commutateurs, routeurs et VLANs</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <h2 class="hub-title"><i class="fa-solid fa-layer-group"></i> 🛠️ Portefeuille de compétences (Option SISR)</h2>
 
-        <section class="company-profile-card" style="margin-top: 30px;">
+        <div class="skills-matrix-grid">
+
+            <div class="skill-domain-card">
+                <div class="domain-header">
+                    <h3><i class="fa-solid fa-server"></i> Gérer le patrimoine informatique</h3>
+                </div>
+                <div class="domain-body">
+                    <div class="skill-row">
+                        <div class="skill-name">Recenser et identifier les actifs informatiques</div>
+                        <div class="skill-proof"><span class="proof-badge">Ex: Inventaire de stage 1</span></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-name">Mettre en place des outils de supervision</div>
+                        <div class="skill-proof"><span class="proof-empty">À venir</span></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-name">Gérer les sauvegardes et la sécurité des données</div>
+                        <div class="skill-proof"><span class="proof-badge">Ex: Guide de bonne conduite / Sauvegardes stage</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-domain-card">
+                <div class="domain-header">
+                    <h3><i class="fa-solid fa-headset"></i> Répondre aux incidents</h3>
+                </div>
+                <div class="domain-body">
+                    <div class="skill-row">
+                        <div class="skill-name">Collecter, suivre et orienter les demandes</div>
+                        <div class="skill-proof"><span class="proof-badge">Ex: Support utilisateur en stage</span></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-name">Traiter les incidents sur les réseaux et serveurs</div>
+                        <div class="skill-proof"><span class="proof-empty">À venir</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-domain-card">
+                <div class="domain-header">
+                    <h3><i class="fa-solid fa-globe"></i> Développer la présence web</h3>
+                </div>
+                <div class="domain-body">
+                    <div class="skill-row">
+                        <div class="skill-name">Participer à la valorisation de l'identité numérique</div>
+                        <div class="skill-proof"><span class="proof-badge">Ex: Création de ce portfolio GitHub</span></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-name">Développer ou adapter une solution web</div>
+                        <div class="skill-proof"><span class="proof-badge">Ex: Articles sur WordPress</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-domain-card">
+                <div class="domain-header">
+                    <h3><i class="fa-solid fa-diagram-project"></i> Travailler en mode projet</h3>
+                </div>
+                <div class="domain-body">
+                    <div class="skill-row">
+                        <div class="skill-name">Analyser les besoins et planifier les tâches</div>
+                        <div class="skill-proof"><span class="proof-empty">À venir</span></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-name">Travailler en équipe (collaboration)</div>
+                        <div class="skill-proof"><span class="proof-empty">À venir</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-domain-card">
+                <div class="domain-header">
+                    <h3><i class="fa-solid fa-network-wired"></i> Mettre à disposition des services</h3>
+                </div>
+                <div class="domain-body">
+                    <div class="skill-row">
+                        <div class="skill-name">Déployer et configurer des postes clients</div>
+                        <div class="skill-proof"><span class="proof-empty">À venir</span></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-name">Configurer des commutateurs, routeurs et VLANs</div>
+                        <div class="skill-proof"><span class="proof-empty">À venir</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="company-profile-card" style="margin-top: 40px;">
             <div class="company-header">
                 <h2>🔍 Légende et Suivi</h2>
             </div>
             <div style="padding: 20px;">
                 <ul class="legend-list">
-                    <li><strong>Projets :</strong> Projets d'ateliers professionnels ou projets personnels.</li>
-                    <li><strong>Stages :</strong> Missions concrètes réalisées en entreprise lors du Stage 1 ou Stage 2.</li>
+                    <li><span class="proof-badge">Projets</span> : Projets d'ateliers professionnels ou projets personnels.</li>
+                    <li style="margin-top: 10px;"><span class="proof-badge" style="background: rgba(56, 189, 248, 0.15); color: var(--neon-blue);">Stages</span> : Missions concrètes réalisées en entreprise lors du Stage 1 ou Stage 2.</li>
                 </ul>
             </div>
         </section>
