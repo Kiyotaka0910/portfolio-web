@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 1ère Année — Noa DELPECH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">&gt;_</span> Noa<span class="logo-dot">.</span>Delpech
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a></li>
+                <li><a href="stage-1.html" class="active"><i class="fa-solid fa-network-wired"></i> Mon Parcours</a></li>
+                <li><a href="veille-cybersecurite.html"><i class="fa-solid fa-shield-halved"></i> Veille Cyber</a></li>
+                <li><a href="tableau-de-synthese.html"><i class="fa-solid fa-chart-pie"></i> Référentiel</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="cyber-header-hub stage-theme">
+        <div class="hub-overlay">
+            <span class="badge-status-cyber"><i class="fa-solid fa-briefcase"></i> IMMERSION PROFESSIONNELLE</span>
+            <h1>Stage de 1ère Année</h1>
+            <p>Déploiement d'infrastructures, support de proximité et développement d'outils au sein d'un environnement industriel.</p>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="company-profile-card">
+            <div class="company-header">
+                <h2><i class="fa-solid fa-building"></i> Fiche d'Identité de l'Entreprise</h2>
+            </div>
+            <div class="company-grid">
+                <div class="info-item">
+                    <span class="info-label">Raison Sociale</span>
+                    <span class="info-value">Occitanes Plats Cuisinés</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Secteur d'activité</span>
+                    <span class="info-value">Industrie Agroalimentaire / Service Informatique interne</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Période du Stage</span>
+                    <span class="info-value">Du 11 mai au 26 juin</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Rôle occupé</span>
+                    <span class="info-value text-blue">Stagiaire Informatique (Support, Réseau & Développement)</span>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="hub-title"><i class="fa-solid fa-list-check"></i> Journal des Réalisations Techniques</h2>
+
+        <div class="missions-feed-grid">
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-sys">Système / Postes</span>
+                    <h3>🔹 Mission 1 : Installation de Windows 11 et jonction de domaine</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Mise à niveau du parc informatique. Les anciens postes opérationnels sous Windows 10 devaient être migrés vers un environnement Windows 11 propre.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Préparation et insertion de la clé bootable contenant l'image ISO de Windows 11 avant le démarrage de la machine.</li>
+                        <li>Démarrage du poste en sollicitant la touche <code>F12</code> en continu pour intercepter le gestionnaire de démarrage (Boot Menu) ou le BIOS.</li>
+                        <li>Sélection du périphérique de stockage USB contenant le programme d'installation.</li>
+                        <div class="single-img-container"><img src="images/img5.jpg" alt="Sélection clé Boot Windows 11" class="gallery-img"></div>
+                        <li>Configuration des paramètres initiaux (langue, partitionnement des disques, nommage standardisé de la machine).</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/img1.jpg" alt="Installation étape 1">
+                            <img src="images/img3.jpg" alt="Installation étape 2">
+                            <img src="images/img4.jpg" alt="Installation étape 3">
+                            <img src="images/img6.jpg" alt="Installation étape 4">
+                            <img src="images/img7.jpg" alt="Installation étape 5">
+                            <img src="images/img8.jpg" alt="Installation étape 6">
+                        </div>
+                        <li>Une fois le système d'exploitation déployé, configuration réseau et intégration finale de l'ordinateur dans le domaine Active Directory de la société.</li>
+                        <div class="single-img-container"><img src="images/img2.jpg" alt="Jonction de domaine Active Directory" class="gallery-img"></div>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-net">Réseau & Infrastructures</span>
+                    <h3>🔹 Mission 2 : Diagnostic de performances réseau et remplacement des liaisons optiques</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Alertes de supervision concernant des lenteurs réseau globales et des pertes sporadiques de paquets lors des communications inter-switches.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Inspection physique des baies de brassage directement en salle informatique pour analyser l'état des modules et connecteurs SFP/fibres optiques.</li>
+                        <li>Remplacement préventif et curatif des jarretières et des connecteurs optiques défectueux sur les switches de distribution.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/fibre1.jpg" alt="Baie de brassage fibre">
+                            <img src="images/fibre3.jpg" alt="Changement connecteur">
+                            <img src="images/fibre5.jpg" alt="Jarretière optique">
+                            <img src="images/fibre7.jpg" alt="Vérification SFP">
+                        </div>
+                        <li>Audit complet de la configuration de l'intégralité des commutateurs (switches) de l'entreprise pour valider l'absence d'erreurs de boucle, de mauvaise affectation de VLAN ou de défauts de négociation de débit.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/fibre2.jpg" alt="Vérification Switch 1">
+                            <img src="images/fibre4.jpg" alt="Vérification Switch 2">
+                            <img src="images/fibre6.jpg" alt="Vérification Switch 3">
+                            <img src="images/fibre8.jpg" alt="Vérification Switch 4">
+                        </div>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-support">Support Clientèle</span>
+                    <h3>🔹 Mission 3 : Résolution d'un défaut d'impression au service Accueil</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Demande d'assistance en provenance du service Ressources Humaines / Accueil signalant une pixellisation et une très mauvaise résolution des impressions.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Déplacement sur site pour identifier physiquement l'équipement. Le tag d'inventaire relevé est : <code>CSTIMP003</code>.</li>
+                        <li>Interrogation de la base de données sécurisée sous <strong>KeePass</strong> afin d'obtenir l'adresse IP statique associée à ce nom d'hôte.</li>
+                        <li>Accès à l'interface d'administration Web (Serveur Web Embarqué) du périphérique d'impression en saisissant son adresse IP cible.</li>
+                        <div class="single-img-container"><img src="images/imp.jpg" alt="Interface Web Imprimante" class="gallery-img"></div>
+                        <li>Ajustement et forçage des paramètres de traitement d'image et de résolution par défaut. Validation de la bonne conformité des impressions via un test d'édition.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-sys">Système / Base de Registre</span>
+                    <h3>🔹 Mission 4 : Nettoyage et purge des profils utilisateurs résiduels (Comptes Fantômes)</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Anomalies de profils mal supprimés ou corrompus laissant des SID "fantômes" encombrer les configurations locales.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Lancement de l'utilitaire de modification de la base de registre Windows en recherchant et exécutant la commande <code>regedit</code> avec des privilèges administrateur.</li>
+                        <li>Navigation rigoureuse dans l'arborescence système jusqu'à la clé cible : <br><code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList</code></li>
+                        <div class="single-img-container"><img src="images/registre.jpg" alt="Base de Registre Windows" class="gallery-img"></div>
+                        <li>Identification du SID orphelin corrompu, clic droit et suppression définitive de la clé pour restaurer l'intégrité logicielle de la machine.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-net">Réseau / Continuité de service</span>
+                    <h3>🔹 Mission 5 : Migration et configuration d'un routeur cellulaire industriel</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Panne matérielle sur le routeur 4G principal assurant la liaison de secours pour la remontée des données critiques de production. Risque d'impact financier lourd sur la chaîne logistique.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Approvisionnement et déballage d'un nouveau routeur de génération supérieure (compatible 5G/4G).</li>
+                        <li>Extraction et sauvegarde des paramètres réseau cruciaux du routeur défaillant (APN, règles de routage).</li>
+                        <li>Raccordement physique en liaison directe entre la carte réseau du PC de configuration et le port LAN du routeur via un câble RJ45.</li>
+                        <li>Désactivation temporaire des autres interfaces réseau du PC, puis exécution d'un <code>ipconfig</code> en invite de commandes pour intercepter la route par défaut.</li>
+                        <div class="single-img-container"><img src="images/Routeur1.jpg" alt="Invite de commandes ipconfig" class="gallery-img"></div>
+                        <li>Interrogation de la passerelle identifiée (<code>192.168.1.1</code>) sur un navigateur Web pour accéder au portail d'administration de l'appareil.</li>
+                        <li>Programmation complète du nouvel équipement : sécurisation des accès, configuration de la passerelle, restriction des plages d'adressage IP dynamiques en adéquation stricte avec l'ancien plan d'adressage.</li>
+                        <div class="single-img-container"><img src="images/Routeur2.jpg" alt="Interface de gestion du routeur" class="gallery-img"></div>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-sys">Système Applicatif</span>
+                    <h3>🔹 Mission 6 : Maintenance applicative d'envergure — Horoquartz, Java & xCard</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> À la suite du déploiement d'une mise à jour majeure du progiciel de gestion des temps Horoquartz, des conflits de versions ont paralysé le composant xCard et l'environnement d'exécution Java des équipes RH.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Intervention ciblée sur les stations de travail des gestionnaires RH pour contrôler la compatibilité logicielle.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/horo1.jpg" alt="Poste RH 1">
+                            <img src="images/horo3.jpg" alt="Poste RH 2">
+                            <img src="images/horo2.jpg" alt="Poste RH 3">
+                        </div>
+                        <li>Désinstallation complète et minutieuse des versions obsolètes ou conflictuelles de Java et xCard, puis réinstallation propre des runtimes et packages certifiés conformes.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/horo5.jpg" alt="Désinstallation">
+                            <img src="images/horo6.jpg" alt="Nettoyage fichiers">
+                            <img src="images/horo7.jpg" alt="Installation dépendances">
+                            <img src="images/horo8.jpg" alt="Vérification version">
+                        </div>
+                        <li>Contrôle du statut opérationnel au sein du gestionnaire des services Windows pour s'assurer du bon amorçage des processus en arrière-plan. Analyse approfondie des journaux d'erreurs (logs).</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/horo4.jpg" alt="Services Windows">
+                            <img src="images/horo9.jpg" alt="Vérification des logs">
+                        </div>
+                        <li>Livraison et phase de tests fonctionnels main dans la main avec les utilisateurs métiers pour valider la reprise du service.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-dev">Développement / Scripting</span>
+                    <h3>🔹 Mission 7 : Écriture d'un script utilitaire d'assistance à distance</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Volonté d'optimiser le temps de prise de ticket au support technique. Les utilisateurs perdaient souvent du temps à localiser le nom réseau de leur machine lors d'un dépannage.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Conception et programmation sous Notepad d'un script d'automatisation léger encapsulé au format <code>.bat</code> (Script Batch).</li>
+                        <li>Le programme extrait dynamiquement le nom d'hôte unique du PC Windows, affiche directement à l'écran les coordonnées téléphoniques de l'assistance informatique locale et intègre un hyperlien de redirection automatique vers le portail de ticketing GLPI de l'entreprise.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/Desk1.jpg" alt="Code du script Batch">
+                            <img src="images/Desk2.jpg" alt="Exécution et rendu graphique">
+                            <img src="images/Desk3.jpg" alt="Raccourci utilisateur">
+                        </div>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-dev">Développement / Données</span>
+                    <h3>🔹 Mission 8 : Application locale de gestion dynamique des badges du personnel</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Demande d'un collaborateur pour faire évoluer un outil rudimentaire de recensement de droits d'accès afin de parer aux risques d'écrasement de données en cas d'accès simultanés.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Développement d'un outillage applicatif scripté couplé à un système de stockage de données structurées au format <code>.json</code>.</li>
+                        <li>Le script gère le chargement et la création automatique du fichier JSON. Chaque opération de modification graphique ou d'édition déclenche instantanément une écriture asynchrone, évitant ainsi la corruption de la base ou l'altération de modifications concurrentes non sauvegardées.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/site1.jpg" alt="Initialisation JSON">
+                            <img src="images/site2.jpg" alt="Formulaire de saisie">
+                            <img src="images/site3.jpg" alt="Structure du code backend">
+                            <img src="images/site4.jpg" alt="Traitement de la mise à jour">
+                            <img src="images/site5.jpg" alt="Interface de contrôle">
+                            <img src="images/site6.jpg" alt="Validation écriture JSON">
+                        </div>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-dev">Développement Web (HTML/JS)</span>
+                    <h3>🔹 Mission 9 : Développement d'un générateur web de signatures de courriels d'entreprise</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Uniformisation de la communication externe du groupe. Nécessité de concevoir un générateur de signatures capable de s'adapter dynamiquement à la charte graphique de la filiale sélectionnée.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Architecture et découpage du projet web en 4 fichiers distincts pour garantir la maintenabilité : 1 structure HTML, 2 scripts JavaScript (séparation fine entre le dictionnaire de données et l'intelligence de l'application) et 1 feuille de style CSS.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/sign5.jpg" alt="Arborescence du projet">
+                            <img src="images/sign9.jpg" alt="Code JavaScript applicatif">
+                        </div>
+                        <li>Intégration d'algorithmes adaptatifs : sélection de la marque de l'entreprise, mise à jour des logos cliquables pointant vers les sites officiels respectifs, et génération de liens dynamiques (notamment un hyperlien d'action directe pour initier un appel ou chat via Microsoft Teams).</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/sign1.jpg" alt="Interface Générateur">
+                            <img src="images/sign2.jpg" alt="Choix de la filiale">
+                            <img src="images/sign3.jpg" alt="Rendu de la signature">
+                            <img src="images/sign4.jpg" alt="Génération du bloc HTML">
+                            <img src="images/sign6.jpg" alt="Test de comportement des liens">
+                            <img src="images/sign7.jpg" alt="Déploiement final">
+                        </div>
+                        <li>Déploiement et mise à disposition de l'application pour toutes les entités du groupe, assurant la présence systématique et homogène des fiches profils et logos en fin de courriel.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-net">Réseau / Administration</span>
+                    <h3>🔹 Mission 10 : Configuration pré-déploiement de commutateurs HP Aruba de secours</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Préparation d'équipements réseau d'urgence (Spares) laissés vierges en stock. L'objectif était de les pré-configurer entièrement afin de pouvoir remplacer instantanément un switch en production en cas de panne matérielle.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Création d'un environnement d'interconnexion temporaire : raccordement d'un commutateur fonctionnel de l'entreprise au port réseau du commutateur à programmer à l'aide d'un cordon de brassage RJ45.</li>
+                        <div class="single-img-container"><img src="images/switch1.jpg" alt="Raccordement physique du switch Aruba" class="gallery-img"></div>
+                        <li>Initialisation de l'émulateur de terminal <strong>PuTTY</strong> pour ouvrir une session sécurisée vers l'IP d'administration du switch relais de l'infrastructure de production (<code>192.168.30.150</code>), suivi d'une authentification privilégiée.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/switch2.jpg" alt="Lancement de PuTTY">
+                            <img src="images/switch4.jpg" alt="Authentification CLI">
+                        </div>
+                        <li>Utilisation du protocole de découverte LLDP pour mapper l'équipement adjacent via l'instruction : <br><code>show lldp info remote-device 19</code> (port ciblé).</li>
+                        <div class="single-img-container"><img src="images/switch3.jpg" alt="Résultat de la commande LLDP" class="gallery-img"></div>
+                        <li>Interception des coordonnées réseau de l'équipement cible pour entamer sa configuration complète, menée de front en lignes de commandes (CLI) et consolidée via l'interface d'administration web.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/fibre2.jpg" alt="Injecter conf VLAN">
+                            <img src="images/fibre4.jpg" alt="Enregistrer configuration">
+                            <img src="images/fibre6.jpg" alt="Vérification des ports">
+                            <img src="images/fibre8.jpg" alt="Validation finale">
+                        </div>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-support">Support & Maintenance</span>
+                    <h3>🔹 Mission 11 : Reconditionnement et maintenance physique d'imprimantes thermiques industrielles</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Les imprimantes d'étiquetage en zone de production subissent de fortes contraintes environnementales provoquant diverses pannes (ruptures d'écrans, usure de rouleaux, oxydation des ports réseau RJ45). Tout arrêt prolongé bloque la palettisation et la chaîne logistique.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Rapatriement à l'atelier informatique de 3 imprimantes industrielles HS présentant des avaries distinctes (un écran LCD brisé et deux cartes mères hors d'usage).</li>
+                        <li>Opération de désassemblage complet et de "cannibalisation" de pièces détachées réutilisables.</li>
+                        <li>Remontage soigné permettant la remise en état de fonctionnement opérationnel de 2 machines prêtes à retourner sur le terrain, maximisant ainsi l'économie matérielle du service informatique.</li>
+                        <div class="img-gallery-flex">
+                            <img src="images/impriii1.jpg" alt="Démontage châssis">
+                            <img src="images/impriii2.jpg" alt="Remplacement nappe écran">
+                            <img src="images/impriii3.jpg" alt="Tests de carte logique">
+                            <img src="images/impriii4.jpg" alt="Imprimante réassemblée">
+                        </div>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-sys">Système / Droits d'Accès</span>
+                    <h3>🔹 Mission 12 : Gestion fine et attribution de droits sur un partage réseau</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="context-box"><strong>Contexte :</strong> Demande d'évolution de droits d'accès sur un dossier partagé contenant des données métiers confidentielles.</p>
+                    <h4>Actions réalisées :</h4>
+                    <ol class="action-list">
+                        <li>Ouverture d'une session d'administration sur le serveur de fichiers hébergé au sein de l'infrastructure virtuelle de l'entreprise.</li>
+                        <li>Navigation jusqu'au répertoire concerné, puis accès aux propriétés avancées de sécurité (onglet Sécurité -> Modifier).</li>
+                        <li>Ajout nominatif du collaborateur ou intégration du groupe de sécurité adéquat issu de l'Active Directory, en appliquant le principe du moindre privilège pour une meilleure étanchéité des données.</li>
+                        <div class="single-img-container"><img src="images/dossier.png" alt="Gestion des permissions Windows" class="gallery-img"></div>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mission-block-card generic-prod-card">
+                <div class="mission-top-meta">
+                    <span class="mission-tag tag-support" style="background: var(--neon-blue); color: #fff;">Interventions de Terrain (Zone Blanche / Hygiène)</span>
+                    <h3>⚙️ Activités Complémentaires en Zone de Production</h3>
+                </div>
+                <div class="mission-body">
+                    <p class="alert-zone-text"><i class="fa-solid fa-circle-exclamation"></i> <strong>Réglementation usine :</strong> Les prises de vues photographiques étaient strictement prohibées au sein des lignes de conditionnement pour des raisons évidentes de règles sanitaires et d'hygiène industrielle strictes.</p>
+                    
+                    <div class="sub-mission-item">
+                        <h5>1. Déploiement de stations de travail fixes et stations d'accueil HP</h5>
+                        <p>Intégration d'écrans déportés et configuration de stations d'accueil (Docks HP) pour assurer la flexibilité des postes des cadres de production itinérants.</p>
+                        <div class="single-img-container" style="max-width: 350px;"><img src="images/HP.jpg" alt="Matériel HP" class="gallery-img"></div>
+                    </div>
+
+                    <div class="sub-mission-item">
+                        <h5>2. Diagnostic et résolution d'incidents sur terminaux de numérisation (Scanners industriels)</h5>
+                        <ul class="bullet-list-style">
+                            <li><strong>Alimentation :</strong> Remplacement de cellules de batteries défectueuses et contrôle du calibrage électrique des puits de charge.</li>
+                            <li><strong>Acquisition de données :</strong> Traitement des anomalies de lecture optique par remplacement des câbles d'interface et réinitialisation complète d'usine des douchettes de scan.</li>
+                            <li><strong>Interconnexion :</strong> Diagnostic d'erreurs de communication avec les terminaux écrans IPO tactiles de l'usine (liaison défaillante ou sollicitation de l'éditeur Copilote en cas de bug de l'application métier).</li>
+                        </ul>
+                        <div class="img-gallery-flex" style="max-width: 500px;">
+                            <img src="images/scan.jpg" alt="Terminal de scan">
+                            <img src="images/ipo.jpg" alt="Écran industriel IPO">
+                        </div>
+                    </div>
+
+                    <div class="sub-mission-item">
+                        <h5>3. Gestion de la flotte de terminaux mobiles d'entreprise</h5>
+                        <ul class="bullet-list-style">
+                            <li>Opérations de transfert de données et permutation de cartes SIM suite à des casses matérielles ou des renouvellements de terminaux de fonction.</li>
+                            <li>Installation, configuration des profils et sécurisation des applications de productivité spécifiques à la fonction de l'employé sur les nouveaux smartphones de l'entreprise.</li>
+                        </ul>
+                        <div class="single-img-container" style="max-width: 200px;"><img src="images/tel.jpg" alt="Flotte Téléphonie Mobile" class="gallery-img"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="company-profile-card" style="margin-top: 40px; border-left: 4px solid var(--neon-green);">
+            <div class="company-header">
+                <h2><i class="fa-solid fa-chart-line"></i> Bilan du Stage</h2>
+            </div>
+            <div style="padding: 20px; line-height: 1.6; color: var(--text-muted);">
+                <p>Ce stage au sein d'<strong>Occitanes Plats Cuisinés</strong> m'a permis de découvrir les réalités et les contraintes d'un service informatique en milieu industriel, où chaque minute d'arrêt réseau a un coût immédiat. J'ai pu développer mon autonomie, ma rigueur d'exécution et apprendre à <strong>gérer le stress des interruptions directes en production en adaptant mon discours technique face aux utilisateurs métiers.</strong></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="cyber-footer">
+        <p>&copy; 2026 Noa Delpech. Rapport de Stage 1ère Année — BTS SIO SISR.</p>
+    </footer>
+
+</body>
+</html>
