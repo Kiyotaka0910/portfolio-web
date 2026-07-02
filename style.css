@@ -1443,3 +1443,54 @@ body {
 .text-purple {
     color: #c084fc;
 }
+
+/* --- CORRECTION DES IMAGES (À coller dans style.css) --- */
+
+/* 1. Conteneur pour une seule image */
+.single-img-container {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* 2. Style de base pour les images uniques pour éviter qu'elles s'écrasent */
+.single-img-container img, .gallery-img {
+    max-width: 100%; /* Empêche l'image de déborder de l'écran */
+    height: auto; /* CRUCIAL : Garde les proportions de l'image (pas d'écrasement) */
+    border-radius: 8px; /* Rendu plus pro avec des bords légèrement arrondis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Petite ombre légère pour le style */
+    display: block;
+    margin: 0 auto;
+}
+
+/* 3. Conteneur pour tes galeries de plusieurs images */
+.img-gallery-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne s'il n'y a plus de place */
+    gap: 15px; /* Espace net entre tes images */
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 4. Style des images dans la galerie */
+.img-gallery-flex img {
+    max-width: calc(33.333% - 15px); /* Aligne 3 images par ligne sur un écran d'ordinateur */
+    height: auto; 
+    object-fit: cover; /* Assure que l'image remplit son espace sans se déformer */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 5. Mode "Responsive" (Pour que le jury voie bien sur petit écran ou tablette) */
+@media (max-width: 768px) {
+    .img-gallery-flex img {
+        max-width: calc(50% - 15px); /* Passe à 2 images par ligne sur tablette */
+    }
+}
+
+@media (max-width: 480px) {
+    .img-gallery-flex img {
+        max-width: 100%; /* Passe à 1 image par ligne sur smartphone */
+    }
+}
