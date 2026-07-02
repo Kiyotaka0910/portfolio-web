@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio — Noa DELPECH</title>
+    <title>Portfolio Professionnel — Noa DELPECH</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,64 +14,92 @@
             <a href="index.html" class="nav-logo"><i class="fa-solid fa-terminal"></i> Noa.Dev</a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Accueil</a></li>
-                <li><a href="#"><i class="fa-solid fa-briefcase"></i> Stages</a></li>
-                <li><a href="#"><i class="fa-solid fa-eye"></i> Veille Cyber</a></li>
-                <li><a href="#"><i class="fa-solid fa-chart-simple"></i> Synthèse</a></li>
+                <li><a href="stage-1.html"><i class="fa-solid fa-briefcase"></i> Stages</a></li>
+                <li><a href="veille-cybersecurite.html"><i class="fa-solid fa-eye"></i> Veille Cyber</a></li>
+                <li><a href="tableau-de-synthese.html"><i class="fa-solid fa-chart-simple"></i> Synthèse</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero-banner">
-        <div class="hero-content">
-            <h1>Noa DELPECH</h1>
-            <p class="subtitle">Étudiant en BTS SIO • Option SISR <i class="fa-solid fa-desktop"></i></p>
-        </div>
-    </header>
+    <div class="banner-container">
+        <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Noa%20Delpech&fontSize=50&animation=fadeIn" alt="Bannière Tech" class="hero-banner-img">
+    </div>
 
     <main class="container">
-        <section class="profile-card">
-            <div class="profile-header">
-                <h2><i class="fa-solid fa-user"></i> Présentation</h2>
+        
+        <header class="main-title">
+            <h1>📂 Portfolio Professionnel — Noa DELPECH</h1>
+            <blockquote class="subtitle-quote">Étudiant en BTS SIO (Services Informatiques aux Organisations) • Option SISR 🖥️</blockquote>
+        </header>
+
+        <hr class="content-divider">
+
+        <section class="content-section">
+            <h2>👤 Présentation</h2>
+            
+            <div class="profile-block">
+                <img src="images/photo.png" alt="Photo de Noa" class="profile-picture">
                 <p>Je suis actuellement étudiant en 1ère année de BTS SIO en option <strong>SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux). Passionné par les infrastructures réseaux, la cybersécurité et l'administration système, je développe mes compétences à travers mes cours, mes projets et ma veille technologique.</p>
             </div>
             
-            <div class="alert-box note">
-                <p><strong><i class="fa-solid fa-bullseye"></i> Objectif Professionnel :</strong> Devenir Administrateur Système et Réseau / Expert en Cybersécurité.</p>
+            <div class="alert-box note-box">
+                <p><strong>Objectif Professionnel :</strong> Devenir Administrateur Système et Réseau / Expert en Cybersécurité.</p>
             </div>
 
-            <div class="skills-section">
-                <h3><i class="fa-solid fa-gear"></i> Technologies en cours d'acquisition</h3>
-                <div class="badge-container">
-                    <span class="badge linux"><i class="fa-brands fa-linux"></i> Linux</span>
-                    <span class="badge cisco"><i class="fa-solid fa-network-wired"></i> Cisco</span>
-                    <span class="badge python"><i class="fa-brands fa-python"></i> Python</span>
+            <div class="skills-block">
+                <h3>🛠️ Technologies & Compétences en cours d'acquisition</h3>
+                <div class="markdown-badges">
+                    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+                    <img src="https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
                 </div>
             </div>
         </section>
 
-        <section class="summary-section">
-            <h2><i class="fa-solid fa-map"></i> Sommaire du Portfolio</h2>
-            <div class="grid-container">
-                <div class="card">
-                    <h3><i class="fa-solid fa-briefcase"></i> Parcours Pro</h3>
+        <hr class="content-divider">
+
+        <section class="content-section">
+            <h2>🗺️ Sommaire du Portfolio</h2>
+            
+            <div class="alert-box important-box">
+                <p><strong>Important :</strong> Utilisez les liens ci-dessous pour naviguer à travers les différentes sections de mon portfolio.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <h3>💼 Parcours Professionnel</h3>
                     <ul>
-                        <li><a href="#">Stage de 1ère Année</a></li>
-                        <li><a href="#" class="disabled">Stage de 2ème Année (À venir)</a></li>
+                        <li>🏢 <a href="stage-1.html">Stage de 1ère Année</a> — <em>Découverte et missions en entreprise</em></li>
+                        <li>⏳ <a href="stage-2.html">Stage de 2ème Année</a> — <em>(À venir)</em></li>
                     </ul>
                 </div>
-                <div class="card">
-                    <h3><i class="fa-solid fa-magnifying-glass"></i> Veille Tech</h3>
+
+                <div class="portfolio-card">
+                    <h3>🔍 Veille Technologique</h3>
                     <ul>
-                        <li><a href="#">La Cybersécurité</a></li>
-                        <li><a href="#" class="disabled">L'Intelligence Artificielle</a></li>
+                        <li>🛡️ <a href="veille-cybersecurite.html">Veille Technologique : La Cybersécurité</a></li>
+                        <li>🤖 <a href="veille-ia.html">Veille Technologique : L'Intelligence Artificielle</a></li>
+                    </ul>
+                </div>
+
+                <div class="portfolio-card">
+                    <h3>📜 Documents Professionnels & Référentiel</h3>
+                    <ul>
+                        <li>⚖️ <a href="guide-bonne-conduite.html">Guide de bonne conduite informatique</a></li>
+                        <li>📊 <a href="tableau-de-synthese.html">Tableau de synthèse des compétences</a></li>
                     </ul>
                 </div>
             </div>
         </section>
+
+        <hr class="content-divider">
+        
+        <p class="github-footer-text">Dépôt GitHub géré dans le cadre de l'épreuve E4 du BTS SIO</p>
+
     </main>
 
     <footer>
-        <p>Dépôt GitHub géré dans le cadre de l'épreuve E4 du BTS SIO</p>
+        <p>&copy; Portfolio Noa Delpech - BTS SIO SISR</p>
     </footer>
 
 </body>
