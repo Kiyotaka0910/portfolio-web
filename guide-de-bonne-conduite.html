@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide de Bonne Conduite Informatique — BTS SIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Style Premium spécifique pour le Guide de Bonne Conduite */
+        .guide-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .guide-intro {
+            background: #1e293b;
+            border-left: 4px solid #38bdf8;
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            color: #cbd5e1;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .guide-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .guide-card:hover {
+            border-color: #475569;
+        }
+
+        .guide-card h2 {
+            color: #ffffff;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 12px;
+        }
+
+        /* Accentuation de couleur par bloc */
+        .card-acces h2 i { color: #38bdf8; }       /* Bleu */
+        .card-donnees h2 i { color: #a855f7; }     /* Violet */
+        .card-ressources h2 i { color: #10b981; }  /* Vert */
+        .card-incidents h2 i { color: #ef4444; }   /* Rouge */
+
+        .guide-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .guide-list li {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .guide-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Texte d'origine mis en valeur */
+        .text-original {
+            color: #ffffff;
+            font-weight: 600;
+            display: block;
+            font-size: 14px;
+        }
+
+        /* Enrichissement académique/professionnel */
+        .text-enrichi {
+            display: block;
+            color: #94a3b8;
+            font-size: 13.5px;
+            margin-top: 6px;
+            padding-left: 15px;
+            border-left: 2px solid #334155;
+        }
+
+        /* Badges de conformité réglementaire */
+        .badge-norme {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        .badge-anssi { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+        .badge-rgpd { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+        .badge-itil { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">&gt;_</span> Mon Portfolio
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Accueil</a></li>
+                <li><a href="stage-1.html"><i class="fa-solid fa-briefcase"></i> Stage 1ère Année</a></li>
+                <li><a href="veille-cybersecurite.html"><i class="fa-solid fa-shield-halved"></i> Veille Cyber</a></li>
+                <li><a href="tableau-de-synthese.html"><i class="fa-solid fa-chart-pie"></i> Référentiel</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="cyber-header-hub stage-theme">
+        <div class="hub-overlay">
+            <span class="badge-status-cyber"><i class="fa-solid fa-shield-halved"></i> SÉCURITÉ &AMP; ÉTHIQUE</span>
+            <h1>📜 Guide de Bonne Conduite Informatique</h1>
+            <p>Les règles fondamentales, bonnes pratiques professionnelles et exigences réglementaires appliquées au quotidien.</p>
+        </div>
+    </header>
+
+    <main class="guide-container">
+
+        <div class="guide-intro">
+            <strong>En tant que futur professionnel de l'informatique,</strong> le respect des règles de sécurité, de la charte informatique et de la législation est une priorité absolue. Ce guide résume les bonnes pratiques que j'applique au quotidien, en formation comme en entreprise.
+        </div>
+
+        <section class="guide-card card-acces">
+            <h2><i class="fa-solid fa-key"></i> 1. Sécurité des Accès et Mots de Passe</h2>
+            <ul class="guide-list">
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-lock"></i> Complexité : Utilisation de mots de passe forts (lettres, chiffres, caractères spéciaux) conformément aux recommandations de l'ANSSI.<span class="badge-norme badge-anssi">ANSSI</span></span>
+                    <span class="text-enrichi">En pratique, je privilégie l'utilisation de phrases de passe d'au moins 12 à 14 caractères. J'active systématiquement l'authentification multifacteur (MFA / 2FA) dès qu'elle est disponible sur les environnements d'administration et de développement.</span>
+                </li>
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-eye-slash"></i> Confidentialité : Ne jamais partager un identifiant ou un mot de passe.</span>
+                    <span class="text-enrichi">Pour centraliser et sécuriser mes accès techniques sans compromettre leur intégrité, j'utilise un gestionnaire de mots de passe chiffré localement (comme KeePass). Je m'interdis de stocker des clés d'API ou des identifiants en clair dans les fichiers de configuration ou les scripts sources.</span>
+                </li>
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-display"></i> Verrouillage : Verrouillage systématique de la session (Win + L) dès que je quitte mon poste de travail, même pour quelques minutes.</span>
+                    <span class="text-enrichi">Cette habitude protège l'environnement contre le "shoulder surfing" (regards indiscrets) et empêche toute usurpation d'identité ou manipulation non autorisée sur le réseau local de l'organisation pendant mon absence.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="guide-card card-donnees">
+            <h2><i class="fa-solid fa-database"></i> 2. Gestion et Protection des Données (RGPD)</h2>
+            <ul class="guide-list">
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-user-shield"></i> Confidentialité : Respect du secret professionnel concernant les données de l'entreprise ou des utilisateurs.</span>
+                    <span class="text-enrichi">Dans le cadre de mes activités d'administration ou de support, j'applique rigoureusement le principe du moindre privilège : je n'accède qu'aux seules données strictement nécessaires à l'accomplissement de ma mission technique.</span>
+                </li>
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-floppy-disk"></i> Sauvegarde : Sauvegarde régulière de mes travaux et codes sources sur des espaces sécurisés (comme ce dépôt GitHub).</span>
+                    <span class="text-enrichi">Pour mes projets d'ateliers et de développement, je m'appuie sur le versioning avec Git pour historiser les modifications. En entreprise, je veille à respecter la stratégie de sauvegarde en vigueur (règle du 3-2-1) pour prévenir les risques d'attaques par rançongiciel (ransomware).</span>
+                </li>
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-gavel"></i> Données Personnelles : Sensibilisation aux règles du RGPD (ne pas stocker de données personnelles sans autorisation).<span class="badge-norme badge-rgpd">RGPD</span></span>
+                    <span class="text-enrichi">Lors de la conception de bases de données ou de l'analyse de logs, je veille à appliquer les principes de minimisation des données et d'anonymisation des informations sensibles concernant les utilisateurs finaux.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="guide-card card-ressources">
+            <h2><i class="fa-solid fa-network-wired"></i> 3. Utilisation Responsable des Ressources</h2>
+            <ul class="guide-list">
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-file-contract"></i> Charte Informatique : Respect strict de la charte de l'établissement ou de l'entreprise d'accueil.</span>
+                    <span class="text-enrichi">La signature de cette charte m'engage professionnellement. Elle encadre l'usage légal, éthique et équitable des moyens de communication et des infrastructures réseaux mis à ma disposition.</span>
+                </li>
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-screwdriver-wrench"></i> Outils autorisés : Utilisation exclusive des logiciels et outils validés par l'équipe technique (pas de shadow IT).</span>
+                    <span class="text-enrichi">L'introduction d'applications tierces non approuvées (Shadow IT) crée des failles majeures de sécurité. Je valide systématiquement la conformité et la licence des outils ou bibliothèques open-source auprès des administrateurs avant toute installation.</span>
+                </li>
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-download"></i> Téléchargements : Interdiction de télécharger des fichiers suspects ou d'installer des logiciels non approuvés.</span>
+                    <span class="text-enrichi">Avant d'exécuter un binaire ou un script téléchargé sur un dépôt officiel, je vérifie systématiquement l'empreinte de hachage (SHA-256) du fichier pour garantir son intégrité et m'assurer qu'il n'a pas été altéré.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="guide-card card-incidents">
+            <h2><i class="fa-solid fa-triangle-exclamation"></i> 4. Comportement en cas d'Incident</h2>
+            <ul class="guide-list">
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-bullhorn"></i> Signalement : En cas de détection d'une anomalie (mail suspect, comportement bizarre d'un serveur, tentative d'intrusion), j'alerte immédiatement le responsable informatique ou mon tuteur de stage.<span class="badge-norme badge-itil">ITIL</span></span>
+                    <span class="text-enrichi">Un signalement rapide permet de déclencher la chaîne de réponse aux incidents avant que la menace ne se propage. Je m'attache à fournir des éléments factuels précis (captures d'écran, logs d'erreurs, en-têtes d'e-mails de phishing) pour faciliter l'analyse.</span>
+                </li>
+                <li>
+                    <span class="text-original"><i class="fa-solid fa-hand"></i> Pas d'initiative risquée : Ne pas tenter de résoudre un problème de sécurité critique sans l'accord de l'équipe réseau/sécurité.</span>
+                    <span class="text-enrichi">Face à une compromission suspectée (ex: poste infecté), ma première action de contournement sécurisée consiste à isoler la machine en débranchant le câble réseau ou en coupant le Wi-Fi, tout en évitant d'éteindre le poste afin de préserver les preuves volatiles contenues dans la mémoire RAM pour l'équipe de sécurité.</span>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="cyber-footer">
+        <p>Guide de Bonne Conduite Informatique — Portfolio BTS SIO</p>
+    </footer>
+
+</body>
+</html>
