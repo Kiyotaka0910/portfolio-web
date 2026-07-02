@@ -1385,3 +1385,105 @@ body {
     display: inline-block;
     box-shadow: 0 0 8px #38bdf8; /* Effet néon brillant */
 }
+
+/* ==========================================================================
+   STYLE POUR LE GUIDE DE BONNE CONDUITE (À ajouter dans style.css)
+   ========================================================================== */
+
+.guide-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.guide-intro {
+    background: #1e293b;
+    border-left: 4px solid #38bdf8;
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.guide-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.guide-card:hover {
+    border-color: #475569;
+}
+
+.guide-card h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 12px;
+}
+
+/* Couleurs des icônes par catégorie */
+.card-acces h2 i { color: #38bdf8; }       /* Bleu */
+.card-donnees h2 i { color: #a855f7; }     /* Violet */
+.card-ressources h2 i { color: #10b981; }  /* Vert */
+.card-incidents h2 i { color: #ef4444; }   /* Rouge */
+
+.guide-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.guide-list li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.guide-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Style du texte d'origine */
+.text-original {
+    color: #ffffff;
+    font-weight: 600;
+    display: block;
+    font-size: 14px;
+}
+
+/* Style des explications techniques ajoutées */
+.text-enrichi {
+    display: block;
+    color: #94a3b8;
+    font-size: 13.5px;
+    margin-top: 6px;
+    padding-left: 15px;
+    border-left: 2px solid #334155;
+}
+
+/* Badges de normes (ANSSI, RGPD, ITIL) */
+.badge-norme {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.badge-anssi { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+.badge-rgpd { background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+.badge-itil { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
