@@ -1027,41 +1027,101 @@ body {
 }
 
 /* ==========================================================================
-   10. STYLE DU TABLEAU DE SYNTHÈSE (Référentiel BTS SIO)
+   10. MATRICE DE COMPÉTENCES (Style Dashboard SIO)
    ========================================================================== */
-.skills-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 0.95rem;
+.skills-matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
 }
 
-.skills-table th, .skills-table td {
-    padding: 14px 18px;
-    text-align: left;
+@media (max-width: 768px) {
+    .skills-matrix-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skill-domain-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-domain-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-color: #475569;
+}
+
+.domain-header {
+    background: #1e1b4b; /* Fond légèrement bleuté/violet foncé */
+    border-bottom: 2px solid var(--neon-purple);
+    padding: 15px 20px;
+}
+
+.domain-header h3 {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.domain-header i {
+    color: var(--neon-purple);
+}
+
+.domain-body {
+    padding: 0;
+}
+
+.skill-row {
+    padding: 15px 20px;
     border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.skills-table th {
-    background-color: #1e293b;
-    color: var(--neon-blue);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
+.skill-row:last-child {
+    border-bottom: none;
 }
 
-.skills-table tr:hover {
-    background-color: rgba(255, 255, 255, 0.02);
-}
-
-.skills-table td strong {
+.skill-name {
+    font-size: 0.95rem;
+    font-weight: 500;
     color: var(--text-main);
 }
 
-.skills-table td em {
+.skill-proof {
+    display: flex;
+    align-items: center;
+}
+
+/* Badges pour les preuves */
+.proof-badge {
+    background: rgba(192, 132, 252, 0.15);
     color: var(--neon-purple);
-    font-style: normal;
+    border: 1px solid rgba(192, 132, 252, 0.3);
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-style: italic;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.proof-empty {
+    background: rgba(148, 163, 184, 0.1);
+    color: var(--text-muted);
+    border: 1px dashed var(--border-color);
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    display: inline-block;
 }
 
 .legend-list {
@@ -1070,6 +1130,9 @@ body {
 }
 
 .legend-list li {
-    margin-bottom: 12px;
     font-size: 0.95rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
