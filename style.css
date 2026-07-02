@@ -1025,3 +1025,51 @@ body {
     margin-top: 60px;
     background: #0b0f19;
 }
+
+/* ==========================================================================
+   10. STYLE DU TABLEAU DE SYNTHÈSE (Référentiel BTS SIO)
+   ========================================================================== */
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+.skills-table th, .skills-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.skills-table th {
+    background-color: #1e293b;
+    color: var(--neon-blue);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.skills-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.skills-table td strong {
+    color: var(--text-main);
+}
+
+.skills-table td em {
+    color: var(--neon-purple);
+    font-style: normal;
+}
+
+.legend-list {
+    list-style: none;
+    padding: 0;
+}
+
+.legend-list li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
