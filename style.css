@@ -1524,12 +1524,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* On s'assure que le fond principal de ton body ne bloque pas la vue */
-body {
-    background-color: transparent !important; /* Le fond devient transparent pour voir la 3D derrière */
-    background-image: none !important; /* On retire l'ancien dégradé fixe */
-}
-
 /* Supprime le fond marron/dégradé de l'en-tête pour voir derrière */
 .cyber-header-hub, .hero-banner {
     background: transparent !important;
