@@ -1494,3 +1494,14 @@ body {
         max-width: 100%; /* Passe à 1 image par ligne sur smartphone */
     }
 }
+
+<header class="cyber-header-hub">
+    <div class="hub-overlay">
+        <span class="badge-status-cyber"><i class="fa-solid fa-circle dot pulse"></i> SYSTEM ONLINE</span>
+        <h1>Mon Portfolio 3D</h1>
+        <p>Développeur & Intégrateur Web</p>
+    </div>
+
+    <div class="hero-3d-container">
+        </div>
+</header>
