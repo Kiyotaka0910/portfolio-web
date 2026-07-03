@@ -1565,3 +1565,23 @@ body {
 
 .mission-block-card:nth-child(6), 
 .mission-block-card:nth-child(7) { border-left-color: #c084fc !important; } /* Violet (Vigilance/IA) */
+
+/* ==========================================================================
+   ALIGNEMENT ET CENTRAGE DE L'EN-TÊTE
+   ========================================================================== */
+
+/* Centre tout le contenu de l'en-tête (badge, titre, description) */
+.cyber-header-hub .hub-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centre horizontalement */
+    text-align: center;     /* Centre le texte à l'intérieur des blocs */
+    justify-content: center;
+    width: 100%;
+}
+
+/* Force la description à rester bien centrée même s'il y a de la marge */
+.cyber-header-hub p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
