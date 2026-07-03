@@ -1529,3 +1529,15 @@ body {
     background-color: transparent !important; /* Le fond devient transparent pour voir la 3D derrière */
     background-image: none !important; /* On retire l'ancien dégradé fixe */
 }
+
+/* Supprime le fond marron/dégradé de l'en-tête pour voir derrière */
+.cyber-header-hub, .hero-banner {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* Si la bande blanche vient de ta navbar fixe, on s'assure qu'elle laisse passer la 3D */
+.navbar {
+    background: rgba(11, 15, 25, 0.75) !important; /* Fond semi-transparent */
+    backdrop-filter: blur(12px); /* Effet flou ultra stylé */
+}
