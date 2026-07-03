@@ -1505,3 +1505,27 @@ body {
     <div class="hero-3d-container">
         </div>
 </header>
+
+/* Positionnement du bloc 3D en fond d'écran total */
+.cyber-3d-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Reste derrière tout le texte */
+    pointer-events: none; /* TRÈS IMPORTANT : permet de cliquer sur tes liens et boutons à travers la 3D */
+}
+
+/* On ajuste tes cartes pour laisser passer la lumière de la 3D */
+.glass-card, .timeline-card, .module-card {
+    background: rgba(19, 27, 46, 0.65) !important; /* Rend le fond un poil plus transparent */
+    backdrop-filter: blur(12px); /* Crée un effet de vitre givrée magnifique sur la 3D */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* On s'assure que le fond principal de ton body ne bloque pas la vue */
+body {
+    background-color: transparent !important; /* Le fond devient transparent pour voir la 3D derrière */
+    background-image: none !important; /* On retire l'ancien dégradé fixe */
+}
