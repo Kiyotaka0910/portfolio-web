@@ -27,22 +27,25 @@
         </div>
     </nav>
 
-    <header class="cyber-header-hub cyber-alert-theme">
+    <!-- Header avec thème BLEU -->
+    <header class="cyber-header-hub" style="background: linear-gradient(135deg, #0b192c 0%, #1e3a8a 100%); border-bottom: 3px solid #3b82f6;">
         <div class="hub-overlay">
-            <span class="badge-status-cyber alert-pulse"><i class="fa-solid fa-file-pdf"></i> ATELIER PROFESSIONNEL 1.1</span>
-            <h1><i class="fa-solid fa-file-lines"></i> AP1.1 : Document de Travail M2L</h1>
+            <span class="badge-status-cyber" style="background-color: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid #3b82f6;">
+                <i class="fa-solid fa-file-pdf"></i> ATELIER PROFESSIONNEL 1.1
+            </span>
+            <h1 style="color: #93c5fd;"><i class="fa-solid fa-file-lines"></i> AP1.1 : Document de Travail M2L</h1>
             <p>Consultation du sujet, de l'appel d'offres et des procédures pour la Maison des Ligues de Lorraine.</p>
         </div>
     </header>
 
     <main class="dashboard-container">
 
-        <h2 class="hub-title"><i class="fa-solid fa-file-pdf"></i> Document PDF complet</h2>
+        <h2 class="hub-title" style="color: #60a5fa;"><i class="fa-solid fa-file-pdf"></i> Document PDF complet</h2>
 
-        <!-- Lecteur PDF intégré -->
-        <div class="pdf-viewer-container" style="width: 100%; height: 800px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.3); margin-bottom: 2rem;">
-            <iframe src="devoir groupe duo.pdf" width="100%" height="100%" style="border: none;">
-                <p>Votre navigateur ne supporte pas l'affichage direct des PDF. <a href="devoir groupe duo.pdf">Cliquez ici pour télécharger le fichier.</a></p>
+        <!-- Lecteur PDF intégrant la molette et ciblant le dossier ap-pdf -->
+        <div class="pdf-viewer-container" style="width: 100%; height: 850px; border-radius: 8px; overflow: hidden; border: 2px solid #3b82f6; box-shadow: 0 4px 20px rgba(59, 130, 246, 0.2); margin-bottom: 2rem;">
+            <iframe src="ap-pdf/devoir-groupe-duo.pdf" width="100%" height="100%" style="border: none;">
+                <p>Votre navigateur ne prend pas en charge l'affichage des PDF. <a href="ap-pdf/devoir-groupe-duo.pdf" style="color: #60a5fa;">Télécharger le fichier ici.</a></p>
             </iframe>
         </div>
 
